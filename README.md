@@ -1,3 +1,67 @@
+# Merkle Tree with Solana Integration
+
+## Overview
+
+This repository contains an implementation of a Merkle tree with Solana blockchain integration. It allows users to efficiently store and verify data using Merkle proofs and Solana's fast and scalable architecture.
+
+## Features
+
+Efficient data verification with Merkle proofs
+Solana blockchain integration for immutable storage
+Customizable hashing algorithms
+Easy-to-use API for adding and verifying data
+## Prerequisites
+
+Node.js >= 14.x.x
+Solana CLI
+Yarn or npm
+## Installation
+
+```bash
+git clone https://github.com/your_username/your_repository.git
+cd your_repository
+yarn install
+```
+
+## Quick Start
+
+Here is how you can add data to the Merkle tree and store its root on Solana:
+
+```javascript
+// Import necessary modules
+const { MerkleTree, SolanaUtils } = require('./path/to/modules');
+
+// Initialize a new Merkle tree
+const tree = new MerkleTree();
+
+// Add data to the tree
+tree.addData('user1', ['productA', 'productB']);
+tree.addData('user2', ['productC']);
+
+// Generate the Merkle root
+const root = tree.generateRoot();
+
+// Store the Merkle root on Solana
+SolanaUtils.storeRoot(root);
+```
+
+## Documentation
+
+For more detailed information, please refer to the documentation.
+
+## Contributing
+
+Please read CONTRIBUTING.md for details on our code of conduct and the process for submitting pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+## Acknowledgments
+
+Solana Team for their scalable blockchain platform
+Open-source community for various libraries and tools
+
 # State Compression and Compressed NFTs
 
 At a high level, state compression is a technique in which a off-chain data is secured by the Solana
