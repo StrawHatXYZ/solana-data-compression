@@ -12,7 +12,7 @@ Customizable hashing algorithms
 Easy-to-use API for adding and verifying data
 ## Prerequisites
 
-Node.js >= 14.x.x
+Node.js >= 14.x.x -- https://nodejs.org/en/learn/getting-started/how-to-install-nodejs
 Solana CLI
 Yarn or npm
 ## Installation
